@@ -34,7 +34,7 @@ with st.form(key='food_t'):
         food_total00=F_1+F_2+F_3+F_4+F_5+F_6+F_7+F_8
         food_total01= food_total00 // 10000//10000
         if food_total00 >= 0:
-            st.text(f'{Gov_id}様  食料は、{food_total01}億分あります。({food_total00}です)')
+            st.text(f'{Gov_id}様  食料は、{food_total01}億分あります。({food_total00:,}です)')
         dt_now = datetime.datetime.now()
         dt_str = dt_now.strftime('%Y%m%d%H%M%S')
         db_name = 'foodtotal.db'

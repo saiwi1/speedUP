@@ -34,7 +34,7 @@ with st.form(key='wood_t'):
         wood_total00=w_1+w_2+w_3+w_4+w_5+w_6+w_7+w_8
         wood_total01= wood_total00 // 10000//10000
         if wood_total00 >= 0:
-            st.text(f'{Gov_id}様  木材は、{wood_total01}億分あります。({wood_total00}です)')
+            st.text(f'{Gov_id}様  木材は、{wood_total01}億分あります。({wood_total00:,}です)')
         dt_now = datetime.datetime.now()
         dt_str = dt_now.strftime('%Y%m%d%H%M%S')
         db_name = 'woodtotal.db'

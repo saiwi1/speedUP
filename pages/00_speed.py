@@ -56,7 +56,7 @@ with st.form(key='sepeed_F'):
         speed_F_total=F_01m+F_05m+F_10m+F_15m+F_30m+F_60m+F_03h+F_08h+F_15h+F_24h+F_03d+H_05m+H_10m+H_15m+H_30m+H_60m+H_03h+H_08h+H_15h
         speed_F_total_d= speed_F_total // 1440
         if speed_F_total >= 0:
-            st.text(f'{Gov_id}様  治療加速と加速合わせて、{speed_F_total_d}日分（端数切捨て)(分単位だと{speed_F_total}分です)')
+            st.text(f'{Gov_id}様  治療加速と加速合わせて、{speed_F_total_d}日分（端数切捨て)(分単位だと{speed_F_total:,}分です)')
         dt_now = datetime.datetime.now()
         dt_str = dt_now.strftime('%Y%m%d%H%M%S')
         db_name = 'speedup.db'

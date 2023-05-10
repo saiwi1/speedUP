@@ -34,7 +34,7 @@ with st.form(key='gold_t'):
         gold_total00=g_1+g_2+g_3+g_4+g_5+g_6+g_7+g_8
         gold_total01= gold_total00 // 10000//10000
         if gold_total00 >= 0:
-            st.text(f'{Gov_id}様  金貨は、{gold_total01}億分あります。({gold_total00}です)')
+            st.text(f'{Gov_id}様  金貨は、{gold_total01}億分あります。({gold_total00:,}です)')
         dt_now = datetime.datetime.now()
         dt_str = dt_now.strftime('%Y%m%d%H%M%S')
         db_name = 'goldtotal.db'

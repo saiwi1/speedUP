@@ -41,7 +41,7 @@ with st.form(key='food_t'):
         conn = sqlite3.connect(db_name)
         c = conn.cursor()
         # テーブルの作成
-        c.execute('''CREATE TABLE IF NOT EXISTS Foodtotal(timestamp str, year int, Month int,Day int,Hour int,Minutes int,Second int,Gov_id str,food_total00 food_total01 int,food_0001 int,food_0010 int,food_0050 int,food_0150 int,food_0500 int,food_1500 int,food_5000 int,speed_H_15h int,food_have int)''')
+        c.execute('''CREATE TABLE IF NOT EXISTS Foodtotal(timestamp str, year int, Month int,Day int,Hour int,Minutes int,Second int,Gov_id str,food_total00 int,food_total01 int,food_0001 int,food_0010 int,food_0050 int,food_0150 int,food_0500 int,food_1500 int,food_5000 int,food_have int)''')
 
             #入力値を取得する
 
